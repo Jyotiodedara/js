@@ -53,6 +53,19 @@ const users = [
 ]// array ni andr bau bdha object che ene loop through  krvu hoy kato value print krvu hoy toh
 
 users[1].email
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
+console.log(tinderUser);//o/p { id: '123abc', name: 'Khushi', isLoggedIn: false }
+
+//only if you want it's keys. of tinderUser
+console.log(Object.keys(tinderUser));//o/p [ 'id', 'name', 'isLoggedIn' ]
+
+//if you want values
+console.log(Object.values(tinderUser));// o/p [ '123abc', 'Khushi', false ]
+
+//you can use (length) and entries
+console.log(Object.entries(tinderUser));// array ni andr array mde
+//o/p [ [ 'id', '123abc' ], [ 'name', 'Khushi' ], [ 'isLoggedIn', false ] ]
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));//o/p true
+console.log(tinderUser.hasOwnProperty('isLogged'));// o/p false
+
+//there are many types of objects learn by yourself
