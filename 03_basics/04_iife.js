@@ -1,8 +1,8 @@
 // Immediatelt Invoked Function Expressions (IIFE)
 // global scope k pollution se problem hoti hai kaibar to woh global scope k variables or pollution ko htane k liye we use iife function.
 
-//function chai(){
-//    console.log(`DB CONNECTED`);
+function chai(){
+    console.log(`DB CONNECTED`);
 }
 chai()   //o/p DB CONNECTED
 
