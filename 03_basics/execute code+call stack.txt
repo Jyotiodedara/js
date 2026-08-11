@@ -1,0 +1,83 @@
+Javascript Execution Context
+ {} --> Global EC
+ // Jya pn global Execution Context bne tya e ene refer kre "this" variable sthe 
+
+1.Global Execution Context
+2.Function Execution Context
+3.Eval Execution Context (its global)
+
+{} --> Memory Creation Phase
+       Execution Phase
+
+// code for example
+
+let val1 = 10
+let val2 = 5
+function addNum(num1, num2){
+    let total = num1 + num2
+    return total
+}
+let result1 = addNum(val1, val2)
+let result2 = addNum(10, 2)
+
+//steps:
+
+1. Global Execution (it allocated first in this)
+2. Memory Creation Phase (collect all variable and pase rakhvama ave bs)
+
+val1 --> undefined
+val2 --> undefined
+addNum --> defination
+result1 --> undefined
+result2 --> undefined
+
+3. Execution Phase
+
+val1 <-- 10 // value 10 jay val1 ma 
+val2 <-- 5
+addNum andr ky ny jay 
+addNum makes its own diff Execution Context --> 
+new variable environment + Execution thread
+
+// waps dono phase pe work krega 2nd one and 3rd one woh kiske liye execute hoga addNum k liye.
+
+*1st do Memory phase
+val1 --> undefined
+val2 --> undefined
+total --> undefined
+
+*2nd execution Context
+num1 --> 10
+num2 --> 5
+total --> 15 // total value return thy global execution ma
+result1 = 15
+result2 = 
+
+// global execution Context nu ek var kam pte toh e pchi delete pn thy ske
+
+-----------------------------------------
+new variable environment + thread( 2 phase)
+1. memory phase
+2. execution phase same repetation as uppr 
+
+//* call stack
+
+function one(){
+    console.log("one")
+    two()
+}
+function two(){
+    console.log("two")
+    three()
+}
+function three(){
+    console.log("three")
+}
+
+one()
+two()
+three()
+
+
+
+
