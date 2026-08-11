@@ -69,3 +69,6 @@ if (isUserLoggedIn && debitCard){
 if (LoggedInFromGoogle || LoggedInFromGoogle){
     console.log("User Logged in");
 } // o/p User Logged in
+
+// && means jetli pn condition hoy e bdhi true avi joye
+// || means khali 1 pn condition true hse to e enu kam krse
