@@ -42,3 +42,7 @@ const myObject = {
     'game1': 'GTA',
     'game2': 'Supermario'
 }
+
+// for (const [key, value] of myObject) {
+//     console.log(key, ':-', value);  
+// }
